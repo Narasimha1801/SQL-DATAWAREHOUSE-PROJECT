@@ -80,15 +80,15 @@ GO
 
 CREATE VIEW gold.fact_sales AS
 SELECT 
-    ss.sls_ord_num,
+    ss.sls_ord_num as order_number,
     gp.product_key,
     gc.customer_key,
-    ss.sls_order_dt,
-    ss.sls_ship_dt,
-    ss.sls_due_dt,
-    ss.sls_sales,
-    ss.sls_quantity,
-    ss.sls_price
+    ss.sls_order_dt as order_date,
+    ss.sls_ship_dt as shipment_date,
+    ss.sls_due_dt as due_date,
+    ss.sls_sales as sales,
+    ss.sls_quantity as quantity,
+    ss.sls_price as price
 FROM silver.crm_sales_details ss
 LEFT JOIN gold.dim_customers gc
     ON ss.sls_cust_id = gc.customer_id
