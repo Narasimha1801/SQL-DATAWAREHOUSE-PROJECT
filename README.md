@@ -49,24 +49,25 @@ The project follows the **Medallion Architecture**, which separates data process
 SQL-DATAWAREHOUSE-PROJECT/
 │
 ├── data/
-│ ├── crm/
-│ │ ├── cust_info.csv
-│ │ ├── prd_info.csv
-│ │ └── sales_details.csv
-│ │
-│ └── erp/
-│ ├── CUST_AZ12.csv
-│ ├── LOC_A101.csv
-│ └── PX_CAT_G1V2.csv
+│   ├── crm/
+│   │   ├── cust_info.csv
+│   │   ├── prd_info.csv
+│   │   └── sales_details.csv
+│   │
+│   └── erp/
+│        ├── CUST_AZ12.csv
+│        ├── LOC_A101.csv
+│        └── PX_CAT_G1V2.csv
 │
 ├── scripts/
-│ ├── 01_database_setup.sql
-│ ├── 02_bronze_load.sql
-│ ├── 03_silver_transformations.sql
-│ └── 04_gold_views.sql
+│   ├── 01_database_setup.sql
+│   ├── 02_bronze_load.sql
+│   ├── 03_silver_transformations.sql
+│   └── 04_gold_views.sql
 │
 ├── README.md
 └── LICENSE
+
 
 
 ---
